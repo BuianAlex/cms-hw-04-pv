@@ -1,0 +1,15 @@
+@mixin button-def($width,$height) {
+  width: $width ;
+  height: $height ;
+  
+  background-color: #fff;
+  border-radius: 28px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  :hover{
+    background-color: rgba(255,255,255,0.3);
+  }
+  
+}
