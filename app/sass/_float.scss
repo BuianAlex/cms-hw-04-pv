@@ -1,0 +1,17 @@
+
+.float-wraper{
+  text-align: center;
+}
+.float-wraper::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.float-item:nth-child(3n+1){
+  float: left;
+}
+
+
+.float-item:nth-child(3n){
+  float: right;
+}

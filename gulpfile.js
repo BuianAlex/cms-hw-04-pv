@@ -96,7 +96,7 @@ gulp.task('build', gulp.series(cleanDist, createCss, createLibsCss, function (cd
 				})) // Переносим скрипты в продакшен
 				.pipe(gulp.dest('dist/js'))
 
-			var buildHtml = gulp.src('app/pages*.html', 'app/*.html')// Переносим HTML в продакшен
+			var buildHtml = gulp.src('app/*.html')// Переносим HTML в продакшен
 				.pipe(rigger())
 				.pipe(gulp.dest('dist'));
 

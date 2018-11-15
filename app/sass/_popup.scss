@@ -1,25 +1,37 @@
 .popUpCooki{
   width: 2000px;
+  height: 72px;
   position: absolute;
-  margin: 0 auto;
-  z-index: 1;
+ 
   top: 0;
   left: 0;
-  
+  z-index: 1;
+
   background-color: #194277;
   color: #fff;
-
-  font-size: 14px;
-  
-  
+  font-size: 14px; 
 }
 .center-block{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 509px;
-  margin: 0 auto;
-  height: 72px;
+  line-height: 30px;
+  
+ 
 
-  line-height: 72px;
+ 
   span{
-    margin-right: 47px;
+    float: left;
   }
+  .sm-button{
+    float: right;
+  }
+  .center-block::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 }

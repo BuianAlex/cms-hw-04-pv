@@ -1,7 +1,11 @@
 @import "app/sass/reset";
 @import "app/sass/variables";
+@import "app/sass/float";
 @import "app/sass/header";
 @import "app/sass/about";
+@import "app/sass/knowleges";
+@import "app/sass/works";
+@import "app/sass/clients";
 @import "app/sass/popup";
 @import "app/sass/footer";
 * {
@@ -9,10 +13,20 @@
 }
 body{
   width: 2000px;
+  margin: 0 auto;
   
   font-family: 'Lato', sans-serif;
   font-size: 16px;
 }
+ h2{
+    background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+    background-clip: text;
+    color: #3677fd;
+
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 35.12px;
+  }
 
 .sm-button{
    @include button-def(112px,30px);
@@ -42,22 +56,30 @@ button:hover{
   position: relative;
 }
 
+.burger-wraper{
+  position: absolute;
+  
+  left: 1545px;
+  top: 110px;
+  
+  cursor: pointer; 
+}
+
+.burger-wraper:hover{
+
+  .burger, .burger::before, .burger::after{
+    background-color: rgba(255,255,255,0.3);
+  }
+}
 
 .burger {
   width: 25px;
   height: 2px;
-  position: absolute; top: 110px;
-  left: 1545px;
-  
+  position: absolute; 
   background-color: #fff;
-  cursor: pointer; 
+  
 }
-.burger:hover{
-    background-color: rgba(255,255,255,0.3);
-  ::before, ::after{
-    background-color: rgba(255,255,255,0.3);
-  }
-} 
+ 
 .burger::before, .burger::after{
   position: absolute;
   left: 0;
@@ -75,20 +97,39 @@ button:hover{
 
 .arrow{
   position: absolute;
-  bottom:-100px;
+  bottom:25px;
   width: 2px;
-  height: 32px;
-   
-  background-color: #fff;
+  height: 30px;
+   font-size: 32px;
+  background-color: rgba(255,255,255,0.6);
   cursor: pointer; 
+  transform-origin: bottom center;
 }
+$degree: 35deg;
+$padding: 4px;
 
-.arrow::before{
+
+.arrow::before, .arrow::after{ 
   position: absolute;
   width: 2px;
-  height: 32px;
-  transform: rotate(90deg) translate(0px, 25px);
-  top: 10px; 
-  background-color: #fff;
+  height: 15px;
+  top: 16px;
+  content: ' ';
+  background-color: rgba(255,255,255,0.6);
   cursor: pointer; 
+}
+.arrow::before{
+left:  $padding;
+
+  transform: rotate($degree) ;
+  
+}
+.arrow::after{
+ right: $padding;
+
+  transform: rotate(-$degree) ;
+ 
+}
+.section-header{
+  text-align: center;
 }

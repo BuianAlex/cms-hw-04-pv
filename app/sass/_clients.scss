@@ -1,0 +1,31 @@
+.clients{
+  position: relative;
+  padding: 5.7rem 0 6rem;
+  background-color: #f1f8ff;
+  text-align: center;
+  header{
+    margin-bottom: 5rem;
+  }
+}
+.logo-list{
+  display: inline-block;
+  text-align: center; 
+  li{
+    display: inline-block;
+    margin: 0 3.7rem;    
+  }
+}
+.brend-logo{  
+  vertical-align: middle;
+  filter: grayscale(100%);
+  
+}
+
+.logo-list li:nth-child(1){
+
+  margin-left: 0;
+}
+
+.logo-list li:last-child{
+  margin-right: 0;
+}
