@@ -18,7 +18,10 @@
 .brend-logo{  
   vertical-align: middle;
   filter: grayscale(100%);
-  
+  cursor: pointer;  
+}
+.brend-logo:hover{
+  filter:none;
 }
 
 .logo-list li:nth-child(1){
