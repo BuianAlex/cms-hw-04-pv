@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+    max-width: 2000px;
+    min-width: 100%;
+    height:100%;
+    margin: 0 auto;
+    
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+  }
+   h2{
+      background: linear-gradient(39deg, #469dff 40%, #326ad4 60%, #2652ae);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 50px;
+    }
+  
+  .sm-button{
+     @include button-def(112px,30px);
+     font-size: 12px;
+    line-height: 16.36px;
+    letter-spacing: 0.55px;
+    color: #194277;
+  }
+  .bg-button{
+    @include button-def(204px,55px);
+    display: block;
+    margin: 0 auto;
+    color: #3695ff;  
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+  }
+  button:hover{
+      background-color: rgba(255,255,255,0.3);
+    }
+    
+  
+  .wraper{
+    width: 1136px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .burger-wraper{
+    position: absolute;
+    
+    left: 1545px;
+    top: 110px;
+    
+    cursor: pointer; 
+  }
+  
+  .burger-wraper:hover{
+  
+    .burger, .burger::before, .burger::after{
+      background-color: rgba(255,255,255,0.3);
+    }
+  }
+  
+  .burger {
+    width: 25px;
+    height: 2px;
+    position: absolute; 
+    background-color: #fff;
+    
+  }
+   
+  .burger::before, .burger::after{
+    position: absolute;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    content: ' ';
+  }
+  .burger::before{
+    bottom: 8px;
+  }
+  .burger::after{
+    top: 8px;
+  }
+  
+  .arrow{
+    position: absolute;
+    bottom:25px;
+    width: 2px;
+    height: 30px;
+    font-size: 32px;
+    background-color: rgba(255,255,255,0.6);
+    transform-origin: bottom center;
+  }
+  $degree: 35deg;
+  $padding: 4px;
+  
+  
+  .arrow::before, .arrow::after{ 
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    top: 16px;
+    content: ' ';
+    background-color: rgba(255,255,255,0.6);
+    cursor: pointer; 
+  }
+  .arrow::before{
+  left:  $padding;
+  
+    transform: rotate($degree) ;
+    
+  }
+  .arrow::after{
+   right: $padding;
+  
+    transform: rotate(-$degree) ;
+   
+  }
+  .section-header{
+    text-align: center;
+  }

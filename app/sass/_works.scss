@@ -31,7 +31,10 @@
   top:50%;
 
 }
-
+.item-works:hover{
+  cursor: pointer;
+  border: 1px solid #cfcfcf;
+}
 .item-works:nth-child(3n){
   float: right;
 }
