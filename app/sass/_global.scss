@@ -11,7 +11,7 @@
     font-size: 16px;
   }
    h2{
-      background: linear-gradient(39deg, #469dff 40%, #326ad4 60%, #2652ae);
+      background: linear-gradient(39deg, #3695ff 40%, #326ad4 60%, #3564fc);
       background-clip: text;
       -webkit-text-fill-color: transparent;
       font-size: 50px;
@@ -89,14 +89,14 @@
   .arrow{
     position: absolute;
     bottom:25px;
-    width: 2px;
+    width: 3px;
     height: 30px;
     font-size: 32px;
     background-color: rgba(255,255,255,0.6);
     transform-origin: bottom center;
   }
   $degree: 35deg;
-  $padding: 4px;
+  $padding:5px;
   
   
   .arrow::before, .arrow::after{ 

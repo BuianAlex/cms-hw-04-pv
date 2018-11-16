@@ -36,10 +36,9 @@
     text-transform: uppercase;
   }
   h1{
-    display: inline-block;
-    width: 100%;
-    max-width: 850px;
-    margin: 1.4rem;
+
+    width: 809px;
+    margin: 0 auto 1rem;
     height: 120px;
 
     overflow: hidden;
@@ -56,7 +55,7 @@
 .profile-picture{
   width: 145px;
   height: 145px;
-  margin: 0 auto 2.5rem;
+  margin: 0 auto 4rem;
  
   z-index: 10000;
   border-radius: 50%;
@@ -64,14 +63,21 @@
   box-shadow: 
              0 0 0 9px rgba(255, 255, 255,.2),
              0 0 0 20px rgba(255, 255, 255,.1);
-
-  background-color: #fff;
+  background-color: #fff;           
+background-image:  url(./../img/Kyiv-Cat-Register.jpg);
+  //
   /* background-image:radial-gradient( rgba(255,255,255,1) 55%,
                                     rgba(255,255,255, 0.2) 56%, rgba(255,255,255, 0.2)63%,
                                     rgba(255,255,255, 0.06)63%);*/ 
   background-repeat: no-repeat;
   background-position: center; 
   background-size: cover;
+
+  img{
+    width: 145px;
+    height: 145px;
+  }
+
 
 }
 
@@ -82,5 +88,60 @@
 }
 
 .popUPnav{
-  display: none;
+  display: block;
+  height: 704px;
+  padding: 4rem;
+  hr{
+    width: 396px;
+    height: 1px;
+  
+    background-color: #194277;
+    opacity: 0.2;
+  }
+  
 }
+.nav-links{
+  margin-bottom: 1rem;
+  li{
+    display: block;}
+  a{
+    color: #d2d2d2;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 98px;  
+  }  
+  a:hover{
+    color: #3677fd;
+  }
+}
+
+.sotial-links{
+  margin-top: 7rem;
+  li{
+    display: inline-block;   
+    margin: 0rem 0.8rem;  
+  }
+  @for $i from 1 through 4 {
+  li:nth-child(#{$i}) .sotial-link{
+   background-image: url(./../img/sotial_#{$i}.png);}
+}
+
+}
+.sotial-link{
+  display: block;
+  height: 51px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+  width: 51px;
+}
+.sotial-link{
+  background-repeat: no-repeat;
+  background-position: center; 
+}
+.sotial-link:hover{
+  //background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+   background-color: #3695ff;
+}
+
+
+
